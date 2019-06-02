@@ -1,0 +1,10 @@
+{{#each data}}
+  <div class="container mt-5">
+       <b><h6>Employee Name: </b>{{this.username}}</h6>
+       <b><h6>Employee Surname:</b>  {{this.email}}</h6>
+       {{!-- <a href="/users/edit/<%= data.id %>"  class="btn btn-primary">Edit</a>
+       <form action="/users/<%= data.id %>?_method=DELETE" class="form-del" method="post">
+           <button type="submit" id ="delete" name="_method" class="btn btn-danger">Delete</button>
+       </form> --}}
+
+{{/each}}

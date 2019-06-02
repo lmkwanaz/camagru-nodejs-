@@ -1,0 +1,70 @@
+ <!-- <!DOCTYPE html>
+<html>
+    </head><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/assets/stylie.css">
+		<title>camagru</title>
+    <body>
+    <div class="bg-image"></div>
+    <div class="action">
+    <div class="bg-text">
+    <form action="/users/register" method="post">
+        <div class="container">
+            <h1>Register</h1>
+            <p>please fill this form to create an account.</p>
+              <hr>
+
+
+            <label for="username"><b>username</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" required/>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required/>
+            <label for="password">password</label>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required/>
+            <label for="Repassword">Repeat password</label>
+            <input type="password" placeholder="Repeat Password" data-equalto="password" name="Repassword" id="Repeat password" required/>
+            <hr>
+            <button type="submit">Register</button>
+              <button type="button" class="google-btn"><a href="/users/google"><b>Google+</b></a></button> 
+            <!-- <a href="register.php">Register</a> -->
+            <!--</div>-->
+            <div class="container signin">
+            <!-- <p>already have an account? <a href="login.php">Sign in</a>.</p>
+            <p>do you want to <a href="index.php">Sign out</a>?</p>  -->
+
+        </div>
+</div>
+    </form>
+</div>
+</div>
+    </body>
+</html>  -->
+
+<div class="container mt-5">
+    <form action="/users/register" method="post">
+        <div class="form-group">
+            <h1 class="center">Register</h1>
+            <div class="form-group">
+                    <label for="username">username</label>
+                    <input type="text" class="form-control"  name="username" placeholder="Enter username" value="{{username}}">
+                  </div>
+                      <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" class="form-control"  name="email" placeholder="Enter your email" value="{{email}}">
+                      </div>
+                  <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Enter Password" value="{{password}}">
+                  </div>
+                  <div class="form-group">
+                        <label>Confirm Password:</label>
+                        <input type="password" class="form-control" name="Repassword" placeholder="Confirm Password" value="{{Repassword}}">
+                      </div>
+                  <button type="submit" class="btn btn-primary btn-block">Create Employee</button>
+
+        </div>
+</div>
+    </form>
+</div>
+    </body>
+</html>

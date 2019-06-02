@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+        <body>
+        <div class="neo"><input type='file' accept='image/*' onchange='openFile(event)'><br>
+            <script>
+              var openFile = function(event) {
+                var input = event.target;
+            
+                var reader = new FileReader();
+                reader.onload = function(){
+                    var dataURL = reader.result;
+                    var output = document.getElementById("scream");
+                    output.src = dataURL;
+                    var photo = document.getElementById("pic");
+                    photo.value = dataURL;
+
+                    var canvas = document.getElementById("mycanvas");
+                    var ctx = canvas.getContext("2d");
+                     var img = document.getElementById("scream");
+                    ctx.drawImage(img, 0 , 0, 235, 345);
+
+                };
+                reader.readAsDataURL(input.files[0]);
+
+              };
+            </script>
+        </div>
+        <div class="img">
+        <p>upload image</p>
+        <img id="scream" width="150" height="200" src="./source/b.jpg">
+    
+    </div>
+    <div class="upload">
+        <form action="/photos/upload" method="post">
+            <input id="pic" type="hidden" name="img_src" value="none">
+            <input id="output1" type="submit" name="screamer" value="Upload" >
+        </form>
+    </div>
+    </body>
+</html>

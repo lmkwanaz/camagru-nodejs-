@@ -1,0 +1,83 @@
+{{!-- <!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <title>camagru</title>
+        <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(54, 87, 114);
+}
+</style>
+    </head>
+    <body>
+        <ul>
+  <li><a class="active" href="/">Hom</a></li>
+  <li><a href="/users/login">login</a></li>
+  <li><a href="/users/register">sign up</a></li>
+  <li><a href="/photos/upload">upload</a></li>
+  <li><a href="/photos/webcam">camera</a></li>
+    <li><a href="#about">gallery</a></li>
+      <li><a href="/">Logout</a></li>
+</ul>
+        {{{body}}}
+    </body>
+</html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="/assets/mycss.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <a class="navbar-brand" href="/">Camagru</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active text-white" href="/">Home</a>
+                    <a class="nav-item nav-link text-white" href="/users/register">Register</a>
+                    <a class="nav-item nav-link text-white" href="/users/login">login</a>
+                    <a class="nav-item nav-link text-white" href="/users/profile">profile</a>
+                     <a class="nav-item nav-link text-white" href="/photos/webcam">Camera</a>
+                      <a class="nav-item nav-link text-white" href="/photos/upload">upload</a>
+                      {{!-- <a class="nav-item nav-link text-white" href="/photos/upload">upload</a> --}}
+                  </div>
+                </div>
+              </nav>
+
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   {{{body}}}
+</body>
+</html>

@@ -1,0 +1,36 @@
+{{!-- <h2 class="page-header">Gallery</h2>
+{{#if user}}
+<p>Welcome to Camagru, you can edit and save your pictures in the webcam tab. </p>  
+{{else}}
+<p>Welcome to Camagru, this is the public gallery, sign up to, edit, like and leave a comment on your favourite pictures!</p>
+{{/if}}
+<div class="col-md-12" id="pagination" style="align-self: center;">
+  <div class="row" href="/webcam/gallery">
+    {{#each images as |image_src|}}
+    {{#if user}}
+    <div class="card">
+    <img class="gallery img-responsive modal-content" src="images/{{image}}">
+    <input type="text" name="comment" class="card" value="{{image.id}}">
+    <button class="btn btn-primary-btn">Comment</button>
+    </div>
+    {{else}}
+    <div class="card">
+    <img class="gallery img-responsive modal-content" src="images/{{image}}">
+    </div>
+    {{/if}}
+    {{/each}}
+    
+    
+    <ul class="thumbnails">
+      {{#each elements}}
+      <li href="/gallery" class="card card-body col-md-6"><a class="thumbnail" href="{{permalink}}" target="_blank"><img src="{{image.image}}" title="{{data.image.caption}}" /></a></li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+<!-- <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div> -->
+<br> --}}
